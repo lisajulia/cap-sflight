@@ -70,6 +70,12 @@
       <artifactId>cds-feature-k8s</artifactId>
       <scope>runtime</scope>
     </dependency>
+    <dependency>
+			<groupId>com.sap.cds</groupId>
+			<artifactId>cds-feature-attachments</artifactId>
+			<version>1.2.1</version>
+			<scope>runtime</scope>
+		</dependency>
   </dependencies>
 
   <build>
@@ -149,7 +155,12 @@
               <arguments>ci</arguments>
             </configuration>
           </execution>
-
+          <execution>
+              <id>cds.resolve</id>
+              <goals>
+                  <goal>resolve</goal>
+              </goals>
+          </execution>
           <execution>
             <id>cds.build</id>
             <goals>

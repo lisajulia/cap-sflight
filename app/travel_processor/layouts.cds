@@ -93,6 +93,12 @@ annotate TravelService.Travel with @UI : {
         Label : '{i18n>Sustainability}',
         ID    : 'i18nSustainability',
         Target: '@UI.FieldGroup#i18nSustainability',
+      },
+      {
+        $Type  : 'UI.ReferenceFacet',
+        ID     : 'AttachmentsFacet',
+        Label  : '{i18n>attachments}',
+        Target : 'attachments/@UI.LineItem'
       }
     ]
   }],
